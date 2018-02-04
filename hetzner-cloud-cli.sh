@@ -21,6 +21,10 @@ then
 # TOKEN is required.
 TOKEN=''
 
+# servers, ssh_keys, images, datacenters
+# default: servers
+SCOPE='servers'
+
 # [show|create|delete]
 # runtime options: -s|--show -c|--create -d|--delete
 # default: -s
@@ -61,9 +65,9 @@ fi
 if [ -z ${TOKEN} ]
 then
   echo specifiy your API token in ${CONFIG}.
+  use $0 --help to get help
   exit 1
 fi
-
 
 # default values
 [ -z ${ACTION} ]     && ACTION='show'
@@ -73,7 +77,6 @@ fi
 [ -z ${IMAGE} ]      && IMAGE=3 # centos 7.4 
 [ -z ${USER_DATA} ]  && USER_DATA=""
 [ -z ${SCOPE} ]      && SCOPE='servers'
-
 
 
 function help {
@@ -181,7 +184,6 @@ EOF
 }
 
 
-# servers, datacenters, images, ssh_keys
 case $1 in
   servers|datacenters|images|ssh_keys)
     SCOPE=$1
@@ -263,6 +265,7 @@ do
     shift
 
 done
+
 
 function show {
   curl -H "Authorization: Bearer ${TOKEN}" \
