@@ -1,8 +1,10 @@
 # hetzner-cloud-cli-sh
-Inofficial Bash command line interface for the Hetzner Cloud API
+Inofficial Bash command line interface for the Hetzner Cloud API.
+
 Licensed under the MIT License.
 
 Find the official Hetzner Cloud documentation at https://docs.hetzner.cloud
+
 Use this script and all related files at your own risk.
 
 This is not a complete implementation of the Hetzner Cloud API. It is just a tool to make
