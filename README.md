@@ -6,7 +6,7 @@ Find the official Hetzner Cloud documentation at https://docs.hetzner.cloud
 Use this script and all related files at your own risk.
 
 This is not a complete implementation of the Hetzner Cloud API. It is just a tool to make
-some things easier. Feel free to contribute and send your pull requests to.
+some things easier. Feel free to contribute and send your pull requests.
 
 
 ## Usage
