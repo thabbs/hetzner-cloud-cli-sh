@@ -73,7 +73,7 @@ fi
 [ -z ${IMAGE} ]      && IMAGE=3 # centos 7.4 
 [ -z ${USER_DATA} ]  && USER_DATA=""
 [ -z ${SCOPE} ]      && SCOPE='servers'
-#
+
 
 
 function help {
@@ -188,16 +188,6 @@ case $1 in
     shift
     ;;
 esac
-
-# default values
-ACTION='show'
-TYPE=cx11-ceph
-KEY='' # public key filename
-KEYS=4580
-DC=fsn1-dc8
-IMAGE=3 # centos 7.4 
-USER_DATA=""
-#
 
 
 function argXor {
