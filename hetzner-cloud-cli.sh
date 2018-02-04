@@ -34,7 +34,7 @@ TYPE=cx11-ceph
 # comma separated list of ssh_keys to inject into a server
 # option: -k|--keys list
 # default: unset
-KEYS=4580
+KEYS=''
 
 # datacenter
 # option: -D|--datacenter string
