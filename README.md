@@ -1,5 +1,5 @@
 # hetzner-cloud-cli-sh
-Inofficial Bash command line interface for the Hetzner Cloud API.
+Unofficial Bash command line interface for the Hetzner Cloud API.
 
 Licensed under the MIT License.
 
